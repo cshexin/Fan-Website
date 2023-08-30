@@ -22,10 +22,10 @@ function home() {
       </nav>
 
       <main>
-        <div class="card-container">
-          <div onClick={lyricsClick}  class="card">中译歌词</div>
-          <div class="card">作品信息</div>
-          <div class="card">赏析</div>
+        <div className="card-container">
+          <div onClick={lyricsClick}  className="card">中译歌词</div>
+          <div className="card">作品信息</div>
+          <div className="card">赏析</div>
         </div>
       </main>
 
