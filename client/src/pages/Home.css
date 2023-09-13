@@ -1,0 +1,76 @@
+body {
+  /* Set the background color for the whole page */
+  background-color: #d6d6c8; /* Replace this with the color of your choice */
+  margin: 0; 
+}
+
+h1 {
+  margin-right: 30%;
+  font-family: 'Noto Serif SC', serif;
+  font-size: xx-large;
+}
+
+nav {
+  display: flex; /* Use flexbox to position the navigation */
+  justify-content: flex-end; /* Align the navigation to the right */
+  padding: 1%;
+  background-color: #f3f2e9;
+}
+
+nav ul {
+  display: flex; /* Use flexbox to center the <li> elements */
+  align-items: center; /* Vertically center the <li> elements */
+  list-style: none;
+  padding-right: 15%;
+}
+
+
+
+nav li:not(:last-child) {
+  margin-right: 50px; /* Adjust the value to control the gap */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #dddddd;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around; /* Distribute cards evenly */
+  margin: 60px auto; /* Add margin to center the card container */
+  max-width: 1200px; /* Set a maximum width to control card size */
+}
+
+.card {
+  background-color: #ffffff; /* Card background color */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  flex: 1; /* Equal width for each card, allowing them to expand evenly */
+  max-width: 350px; /* Set a maximum width for each card */
+  height: 500px;
+  margin-right: 60px; /* Increase the space between each card */
+
+  /* Center the text horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px; 
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #f0f0f0; /* Darker background on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+/* Remove the right margin from the last card */
+.card:last-child {
+  margin-right: 0;
+}
