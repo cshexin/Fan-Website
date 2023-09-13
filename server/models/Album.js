@@ -9,6 +9,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DATE,
             allowNull: false,
         },
+        no:{
+            type:DataTypes.INTEGER,
+            allowNull: false,
+        },
     });
     Album.associate = (models) => {
         Album.hasMany(models.Song, {
