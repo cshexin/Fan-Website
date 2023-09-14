@@ -9,10 +9,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DATE,
             allowNull: false,
         },
-        no:{
-            type:DataTypes.INTEGER,
-            allowNull: false,
-        },
+        cover: DataTypes.STRING  // This field stores the image filename or path
+
     });
     Album.associate = (models) => {
         Album.hasMany(models.Song, {

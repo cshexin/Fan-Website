@@ -25,19 +25,17 @@ function Album() {
     <div className="App">
       <NavBar/>
 
-        {listOfAlbums.map((value, key)=>{
-            return (
-              <div>
-                {/* main section */}
-                <div className="album" onClick={()=>{navigate(`/albuminfo/${value.id}`)}}> {/* Update onClick */}
-                    <div className="title">{value.title}</div>
-                    <div className="date">{value.released_date}</div>
-                </div>
-                
-              </div>
-            )
-
-        })}
+      {listOfAlbums.map((value, key) => {
+        return (
+          <div key={key}>
+            <div className="album" onClick={() => { navigate(`/albuminfo/${value.id}`) }}>
+                <img src={`http://localhost:3001/covers/album/${value.cover}`} alt={`${value.title} cover`} />
+                <div className="title">{value.title}</div>
+                <div className="date">{value.released_date}</div>
+            </div>
+          </div>
+        );
+      })}
 
       
 

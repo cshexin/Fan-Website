@@ -1,3 +1,4 @@
+/* Album container */
 .album {
   border: 1px solid #ccc;
   margin: 10px;
@@ -5,21 +6,28 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* Changed from 'start' to 'flex-start' */
-  cursor: pointer;  /* Makes a hand cursor when hovering */
-  transition: all 0.3s ease;  /* Smooth transition for all changes */
+  align-items: center; /* Center items horizontally */
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* Hover effect */
 .album:hover {
   border-color: #999;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Active click effect */
 .album:active {
   background-color: #f0f0f0;
-  box-shadow: inset 0px 4px 8px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cover image */
+.album img {
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain the image's aspect ratio */
+  margin-bottom: 10px; /* Add space below the cover image */
 }
 
 .title {
