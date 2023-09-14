@@ -1,14 +1,22 @@
 /* Album container */
+.albums-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .album {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc;
   margin: 10px;
   padding: 10px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center; 
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
+  width: 30%;
 }
 
 /* Hover effect */
