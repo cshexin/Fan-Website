@@ -1,49 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap');
+
 /* Album container */
 .albums-container{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
 }
 
 .album {
-  /* border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
   cursor: pointer;
-  transition: all 0.3s ease; */
-  width: 30%;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
+/* Hover effect for album */
 .album:hover {
-  border-color: #999;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 /* Active click effect */
 .album:active {
-  background-color: #f0f0f0;
-  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent; /* Ensure there's no background on click */
+  box-shadow: none; /* Remove any shadow effect */
 }
 
-/* Cover image */
+.albums-container, .album {
+  background-color: transparent !important;
+}
+
+/* Cover image styling */
 .album img {
   max-width: 100%; /* Ensure images don't exceed the container width */
   height: auto; /* Maintain the image's aspect ratio */
-  margin-bottom: 10px; /* Add space below the cover image */
+  margin-bottom: 10px; /* Space below the cover image */
 }
-
 .title {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+  font-family: 'Shippori Mincho', serif;
 }
 
 .date {
   font-size: 0.9em;
   color: #555;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: bold;
 }

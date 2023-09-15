@@ -1,6 +1,6 @@
 body {
   /* Set the background color for the whole page */
-  background-color: #d6d6c8; /* Replace this with the color of your choice */
+  background-color: #e4e8ea; /* Replace this with the color of your choice */
   margin: 0; 
 }
 
@@ -14,7 +14,6 @@ nav {
   display: flex; /* Use flexbox to position the navigation */
   justify-content: flex-end; /* Align the navigation to the right */
   padding: 1%;
-  background-color: #f3f2e9;
 }
 
 nav ul {
