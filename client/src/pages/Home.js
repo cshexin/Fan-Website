@@ -1,6 +1,7 @@
 import './Home.css';
 import * as React from 'react';
 import Nav from '../config/Nav'
+
 const lyricsClick = () =>{
   console.log("Howdy lyrics")
 } 
@@ -10,9 +11,8 @@ function Home() {
     <div className="App">
 
       <Nav/>
-      <main>
-        {/* main section */}
 
+      <main>
         <div className="card-container">
           <div onClick={lyricsClick}  className="card">中译歌词</div>
           <div className="card">作品信息</div>

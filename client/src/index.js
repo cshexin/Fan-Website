@@ -7,21 +7,18 @@ import Album from './pages/Album';
 import InsertAlbum from './pages/InsertAlbum'
 import Albuminfo from './pages/Albuminfo'
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <Router>
     <Link to="/Insertalbum"> Insert an Album</Link>
     <Link to="/Album"> Go to the Albums Page</Link>
-
 
     <Routes>
         <Route index element={<Home />} />
         <Route path='/Album' element={<Album />} />
         <Route path='/Insertalbum' element={<InsertAlbum />}/>
         <Route path='/Albuminfo/:id' element={<Albuminfo />}/>
-
     </Routes>
   </Router>
 
