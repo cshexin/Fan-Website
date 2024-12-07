@@ -1,4 +1,3 @@
-// Song
 module.exports = (sequelize, DataTypes) => {
     const Song = sequelize.define("Song", {
         title: {
@@ -7,5 +6,13 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
+    Song.associate = (models) => {
+        Song.belongsTo(models.Album, {
+            foreignKey: {
+                allowNull: false, 
+            },
+        });
+    };
+
     return Song;
-}
+};

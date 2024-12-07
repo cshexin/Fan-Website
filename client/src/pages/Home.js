@@ -16,7 +16,6 @@ function Home() {
         <div className="card-container">
           <div onClick={lyricsClick}  className="card">中译歌词</div>
           <div className="card">作品信息</div>
-          <div className="card">赏析</div>
         </div>
       </main>
 
