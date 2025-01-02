@@ -11,7 +11,6 @@ function Nav() {
             <li><Link to="/">主页</Link></li>
             <li><Link to="/lyrics">中译歌词</Link></li>
             <li><Link to="/discography">作品信息</Link></li>
-            <li><Link to="/analysis">赏析</Link></li>
             <li><Link to="/about">关于</Link></li>
           </ul>
         </nav>
